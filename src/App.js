@@ -1,15 +1,18 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
-import Header from "./components/Header";
-
-import Main from "./components/Main";
+import { ActionComponent } from "./components/actionComponent";
+import { DisplayComponent } from "./components/displayComponent";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
+      <Provider store={store}>
+        <ActionComponent />
+        <DisplayComponent />
+      </Provider>
     </div>
   );
 }

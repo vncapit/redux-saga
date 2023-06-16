@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Provider store={store}>
         <ActionComponent />
-        <DisplayComponent />
+        <DisplayComponent localCounter={3} />
       </Provider>
     </div>
   );

@@ -1,3 +1,4 @@
 import { combineReducers } from "redux";
 import { counterReducer } from "./counterReducer";
-export const rootReducer = combineReducers({ counterReducer });
+import { fetchDataReducer } from "./fetchDataReducer";
+export const rootReducer = combineReducers({ counterReducer, fetchDataReducer });
